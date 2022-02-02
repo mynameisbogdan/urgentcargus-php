@@ -1,0 +1,22 @@
+<?php
+
+declare(strict_types=1);
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__ . '/src')
+    ->ignoreDotFiles(true)
+    ->ignoreVCS(true)
+    ->files()
+    ->name('*.php')
+;
+
+return MNIB\CsFixer\Config::create()
+    ->setFinder($finder)
+    ->setRiskyAllowed(true)
+    ->addRules([
+        'declare_strict_types' => true,
+        'strict_comparison' => true,
+        'strict_param' => true,
+        'string_line_ending' => true,
+    ])
+;

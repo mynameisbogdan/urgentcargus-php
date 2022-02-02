@@ -1,0 +1,38 @@
+{
+    "name": "mnib-dev/urgentcargus",
+    "description": "A very simple PHP Wrapper for the UrgentCargus API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5 || ^8.0.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.0 || ^7.0.1"
+    },
+    "require-dev": {
+        "mnib-dev/coding-standard": "dev-master"
+    },
+    "replace": {
+        "mnib/urgentcargus-php": "self.version",
+        "mnib-dev/urgentcargus-php": "self.version"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "MNIB\\UrgentCargus\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}

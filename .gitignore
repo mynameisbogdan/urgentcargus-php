@@ -1,0 +1,13 @@
+.idea/
+vendor/
+
+composer.lock
+
+.DS_Store
+*.swp
+Thumbs.db
+
+/.php_cs
+/.php_cs.cache
+
+!.gitignore
