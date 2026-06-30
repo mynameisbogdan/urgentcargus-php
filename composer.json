@@ -7,7 +7,7 @@
         "php": "^7.2.5 || ^8.0.2",
         "ext-curl": "*",
         "ext-json": "*",
-        "guzzlehttp/guzzle": "^6.0 || ^7.0.1"
+        "guzzlehttp/guzzle": "^6.0 || ^7.0"
     },
     "require-dev": {
         "mnib-dev/coding-standard": "dev-master"
